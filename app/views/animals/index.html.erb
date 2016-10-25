@@ -1,0 +1,30 @@
+<h1>Animals#index</h1>
+<p>Find me in app/views/animals/index.html.erb</p>
+
+<table>
+
+<thead>
+  <tr>
+    <th>
+      Animal
+    </th>
+    <th>
+      Type
+    </th>
+  </tr>
+</thead>
+
+<tbody>
+  <% @animals.each do |a| %>
+  <tr>
+    <td>
+      <%= a.name %>
+    </td>
+    <td>
+      <%= a.animal_type.name %>
+    </td>
+  </tr>
+  <% end %>
+</tbody>
+
+</table>
